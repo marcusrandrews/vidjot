@@ -1,0 +1,16 @@
+npm init
+npm install --save express
+npm install -g nodemon
+npm root -g
+npm install express-handlebars --save
+npm install --save mongoose
+npm install --save body-parser
+npm install --save method-override
+npm install express-session connect-flash --save
+npm install --save bcryptjs
+npm install --save passport
+npm install --save passport-local
+
+
+authentication
+access control
