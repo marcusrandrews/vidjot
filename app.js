@@ -1,4 +1,6 @@
-const express = require('express'); // require function brings in module
+
+// require function brings in module in
+const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const methodOverride = require('method-override');
@@ -16,6 +18,7 @@ const app = express();
 const ideas = require('./routes/ideas');
 const users = require('./routes/users');
 
+//CONFIG FILES
 // Passport Config
 require('./config/passport')(passport);
 // DB Config
@@ -35,7 +38,7 @@ mongoose.connect(db.mongoURI, {  // defines and creates database
 
 
 // MIDDLEWARE
-// EXPRESS_HANDLEBARS MIDDLEWARE
+// EXPRESS_HANDLEBARS MIDDLEWARE - I imagine that this should always go at the top
 // telling the system we want o use the handlebars template engine
 app.engine('handlebars', exphbs({
   defaultLayout: 'main'
